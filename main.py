@@ -1,6 +1,7 @@
-from validate_docbr import CPF
-from Cpf import ValidaCpf
+from cpf_cnpj import Documento
 
-cpf = ValidaCpf()
+exemplo_cnpj = "21647634000100"
+exemplo_cpf = "07387151903"
+documento = Documento.cria_documento(exemplo_cpf)
 
-print(cpf.validate("073.871.519-03"))
+print(documento)
