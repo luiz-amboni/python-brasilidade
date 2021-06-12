@@ -23,8 +23,23 @@
 
 # ------------------------------------------------------ #
 
-from datas_br import DatasBr
+# VALIDAÇÃO DE DATAS
 
-cadastro = DatasBr()
-print(cadastro)
-print(cadastro.tempo_cadastro())
+# from datas_br import DatasBr
+#
+# cadastro = DatasBr()
+# print(cadastro)
+# print(cadastro.tempo_cadastro())
+
+# ------------------------------------------------------ #
+
+# VALIDAÇÃO CEP + API "VIA CEP"
+
+from acesso_cep import BuscaEndereco
+
+cep = 88801440
+objeto_cep = BuscaEndereco(cep)
+bairro, cidade, uf = objeto_cep.acessa_via_cep()
+print(bairro, cidade, uf)
+
+
