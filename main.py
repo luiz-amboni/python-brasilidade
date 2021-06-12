@@ -12,10 +12,19 @@
 
 # ------------------------------------------------------ #
 
-from TelefoneBr import TelefoneBr
+# VALIDAÇÃO NÚMERO DE TELEFONE
 
-telefone = "554899175148"
+# from TelefoneBr import TelefoneBr
+#
+# telefone = "554899175148"
+#
+# telefone_objeto = TelefoneBr(telefone)
+# print(telefone_objeto)
 
-telefone_objeto = TelefoneBr(telefone)
-print(telefone_objeto)
+# ------------------------------------------------------ #
 
+from datas_br import DatasBr
+
+cadastro = DatasBr()
+print(cadastro)
+print(cadastro.tempo_cadastro())
